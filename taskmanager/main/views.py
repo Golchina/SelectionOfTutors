@@ -9,6 +9,12 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
+def registration(request):
+    return render(request, 'main/registration.html')
+
+def singIn(request):
+    return render(request, 'main/singIn.html')
+
 def create(request):
     error = ''
     if request.method == 'POST':
